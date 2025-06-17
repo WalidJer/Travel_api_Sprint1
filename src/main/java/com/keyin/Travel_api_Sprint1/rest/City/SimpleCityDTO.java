@@ -1,4 +1,4 @@
-package rest.City;
+package com.keyin.Travel_api_Sprint1.rest.City;
 
 public class SimpleCityDTO {
 

@@ -1,4 +1,4 @@
-package rest.Airport;
+package com.keyin.Travel_api_Sprint1.rest.Airport;
 
 public class SimpleAirportDTO {
     private Long id;

@@ -1,8 +1,8 @@
-package rest.City;
+package com.keyin.Travel_api_Sprint1.rest.City;
 
 import jakarta.persistence.*;
-import rest.Airport.Airport;
-import rest.Passenger.Passenger;
+import com.keyin.Travel_api_Sprint1.rest.Airport.Airport;
+import com.keyin.Travel_api_Sprint1.rest.Passenger.Passenger;
 
 import java.util.List;
 
