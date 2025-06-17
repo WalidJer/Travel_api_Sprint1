@@ -1,0 +1,158 @@
+################### POST /cities ###################
+
+POST /cities
+
+{
+  "name": "Toronto",
+  "province": "Ontario",
+  "population": 3000000
+}
+
+
+POST /cities
+
+{
+  "name": "Montreal",
+  "province": "Quebec",
+  "population": 2000000
+}
+
+
+POST /cities
+
+{
+  "name": "St. John's",
+  "province": "Newfoundland",
+  "population": 500000
+}
+
+################### POST /airports ###################
+
+POST /airports
+
+{
+  "name": "Toronto Pearson International Airport",
+  "code": "YYZ",
+  "city": { "id": 1 }
+}
+
+
+POST /airports
+
+{
+  "name": "Montreal Trudeau Airport",
+  "code": "YUL",
+  "city": { "id": 2 }
+}
+
+
+POST /airports
+
+{
+  "name": "St. John's International Airport",
+  "code": "YYT",
+  "city": { "id": 3 }
+}
+
+################### POST /passengers ###################
+
+POST /passengers
+
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "phoneNumber": "1234567890",
+  "city": { "id": 1 }
+}
+
+
+POST /passengers
+
+{
+  "firstName": "Emily",
+  "lastName": "Johnson",
+  "phoneNumber": "9876543210",
+  "city": { "id": 2 }
+}
+
+
+POST /passengers
+
+{
+  "firstName": "Liam",
+  "lastName": "Williams",
+  "phoneNumber": "5551234567",
+  "city": { "id": 3 }
+}
+
+################### POST /aircrafts ###################
+
+POST /aircrafts
+
+{
+  "model": "Boeing 777",
+  "airlineName": "Air Canada",
+  "capacity": 300,
+  "passengers": [{ "id": 1 }, { "id": 2 }],
+  "airports": [{ "id": 1 }, { "id": 2 }]
+}
+
+
+POST /aircrafts
+
+{
+  "model": "Airbus A320",
+  "airlineName": "WestJet",
+  "capacity": 150,
+  "passengers": [{ "id": 2 }, { "id": 3 }],
+  "airports": [{ "id": 2 }, { "id": 3 }]
+}
+
+
+POST /aircrafts
+
+{
+  "model": "Embraer 175",
+  "airlineName": "Porter Airlines",
+  "capacity": 90,
+  "passengers": [{ "id": 1 }],
+  "airports": [{ "id": 1 }]
+}
+
+################### PUT requests ###################
+
+PUT /cities/1
+
+{
+  "name": "Toronto Updated",
+  "province": "Ontario Updated",
+  "population": 3500000
+}
+
+
+PUT /airports/1
+
+{
+  "name": "Toronto Pearson Updated",
+  "code": "YYZ-Updated",
+  "city": { "id": 1 }
+}
+
+
+PUT /passengers/1
+
+{
+  "firstName": "John Updated",
+  "lastName": "Smith Updated",
+  "phoneNumber": "9999999999",
+  "city": { "id": 1 }
+}
+
+
+PUT /aircrafts/1
+
+{
+  "model": "Boeing 777 Updated",
+  "airlineName": "Air Canada Updated",
+  "capacity": 350
+}
