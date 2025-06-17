@@ -1,4 +1,4 @@
-package rest.Passenger;
+package com.keyin.Travel_api_Sprint1.rest.Passenger;
 
 public class SimplePassengerDTO {
     private Long id;

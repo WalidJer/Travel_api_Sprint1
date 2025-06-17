@@ -1,7 +1,7 @@
-package rest.Passenger;
+package com.keyin.Travel_api_Sprint1.rest.Passenger;
 
-import rest.Aircraft.SimpleAircraftDTO;
-import rest.City.SimpleCityDTO;
+import com.keyin.Travel_api_Sprint1.rest.Aircraft.SimpleAircraftDTO;
+import com.keyin.Travel_api_Sprint1.rest.City.SimpleCityDTO;
 
 import java.util.List;
 import java.util.stream.Collectors;
